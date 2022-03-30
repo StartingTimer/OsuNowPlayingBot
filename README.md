@@ -6,6 +6,8 @@ Needs [gosumemory](https://github.com/l3lackShark/gosumemory) to be running to a
 
 This needs to be run locally to get the beatmap information
 
+only works on standard 
+
 ## config.json
 
 ```
