@@ -37,9 +37,10 @@ function onMessageHandler(target, context, msg, self) {
     getCurrentMap()
       .then((data) => {
         url = `https://osu.ppy.sh/beatmapsets/${data.menu.bm.set}#osu/${data.menu.bm.id}`;
+        beatmap = `${data.menu.bm.metadata.artist} - ${data.menu.bm.metadata.title} [${data.menu.bm.metadata.difficulty}]`;
         client.say(
           target,
-          `${config.CHANNEL_NAME} is currently playing: ${url}`
+          `@${context.username}, ${config.CHANNEL_NAME} is now playing: ${beatmap}, ${data.menu.bm.stats.SR}★ Download: ${url}`
         );
         console.log(`* Executed ${commandName} command`);
       })
