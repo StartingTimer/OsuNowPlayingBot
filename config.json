@@ -1,5 +1,5 @@
 {
-  "BOT_USERNAME": "username",
+  "BOT_USERNAME": "username of your channel/bot channel",
   "OAUTH_TOKEN": "oauth token from https://twitchapps.com/tmi/",
-  "CHANNEL_NAME": "name of your channel"
+  "CHANNEL_NAME": "username of your channel"
 }
