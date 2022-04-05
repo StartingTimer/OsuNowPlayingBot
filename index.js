@@ -2,9 +2,10 @@ const tmi = require("tmi.js");
 const fs = require("fs");
 const axios = require("axios");
 
+// read config file
 try {
   config = JSON.parse(fs.readFileSync("./config.json", "utf8"));
-} catch (error) {
+} catch {
   console.log("Error reading config.json");
 }
 
@@ -37,26 +38,29 @@ function onMessageHandler(target, context, msg, self) {
     getCurrentMap()
       .then((data) => {
         url = `https://osu.ppy.sh/beatmapsets/${data.menu.bm.set}#osu/${data.menu.bm.id}`;
+        length = new Date(data.menu.bm.time.full);
+        length = `${length.getMinutes()}:${length.getSeconds()}`;
         beatmap = `${data.menu.bm.metadata.artist} - ${data.menu.bm.metadata.title} [${data.menu.bm.metadata.difficulty}]`;
         client.say(
           target,
-          `@${context.username}, ${config.CHANNEL_NAME} is now playing: ${beatmap}, ${data.menu.bm.stats.SR}★ Download: ${url}`
+          `@${context.username}, ${config.CHANNEL_NAME} is now playing: ${beatmap}, ${data.menu.bm.stats.SR}★, ${length} Download: ${url}`
         );
         console.log(`* Executed ${commandName} command`);
       })
-      .catch((error) => {
+      .catch(() => {
         console.log("make sure gosumemory is running!");
       });
   }
 }
 
+// Fuck websockets all my homies hate websockets
 function getCurrentMap() {
   return axios
     .get("http://127.0.0.1:24050/json")
     .then(({ data }) => {
       return data;
     })
-    .catch((error) => {
+    .catch(() => {
       console.log("Make sure gosumemory is running!");
     });
 }
