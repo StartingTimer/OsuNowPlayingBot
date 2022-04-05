@@ -2,7 +2,7 @@
 
 A Twitch bot that sends what map you are playing in osu! to twitch chat when the command "!np" is run
 
-Needs [gosumemory](https://github.com/l3lackShark/gosumemory) to be running to and a config.json file in the same directory
+Needs [gosumemory](https://github.com/l3lackShark/gosumemory) to be running and a config.json file in the same directory
 
 This needs to be hosted locally to get the beatmap information
 
