@@ -14,12 +14,11 @@ You can use your broadcaster account with it or make a seperate one to be the bo
 If you don't want to go to the hassle of setting up node.js you can just use the executable and setup the config file appropriately
 
 ### node.js
-Install [node.js](https://nodejs.org/en/)
-
-1. Clone the repository
-2. run ``npm install``
-3. setup config.json to have the username of the bot account, the oauth token of said account and the name of your channel
-4. run ``node index.js`` and the bot should run 
+1. Install [node.js](https://nodejs.org/en/)
+2. Clone the repository
+3. run ``npm install``
+4. setup config.json to have the username of the bot account, the oauth token of said account and the name of your channel
+5. run ``node index.js`` and the bot should run 
 
 make sure gosumemory is running or the bot will not work
 
