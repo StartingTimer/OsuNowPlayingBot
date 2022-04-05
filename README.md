@@ -1,5 +1,7 @@
 # OsuNowPlayingBot
 
+[![CodeFactor](https://www.codefactor.io/repository/github/startingtimer/osunowplayingbot/badge/main)](https://www.codefactor.io/repository/github/startingtimer/osunowplayingbot/overview/main)
+
 A Twitch bot that sends what map you are playing in osu! to twitch chat when the command "!np" is run
 
 Needs [gosumemory](https://github.com/l3lackShark/gosumemory) to be running and a config.json file in the same directory
