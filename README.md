@@ -13,10 +13,13 @@ You can use your broadcaster account with it or make a seperate one to be the bo
 ~~only works on standard~~ you have to have right gamemode selected for it to work properly
 
 ## Setup
-If you don't want to go to the hassle of setting up node.js you can just use the executable and setup the config file appropriately
+### Prepackaged Binary
+1. Download [index.exe](index.exe) and [config.json](config.json) you can download them by right clicking them and clicking save link as
+2. Setup config.json 
+3. Run ``index.exe``
 
 ### node.js
-1. Install [node.js](https://nodejs.org/en/)
+1. Install [node.js](https://nodejs.org/en/) if it isn't already installed
 2. Clone the repository
 3. run ``npm install``
 4. setup config.json to have the username of the bot account, the oauth token of said account and the name of your channel
