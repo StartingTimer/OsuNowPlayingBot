@@ -15,7 +15,7 @@ You can use your broadcaster account with it or make a seperate one to be the bo
 ## Setup
 ### Prepackaged Binary
 1. Download [index.exe](index.exe) and [config.json](config.json) you can download them by right clicking them and clicking save link as
-2. Setup config.json 
+2. setup config.json to have the username of the bot account, the oauth token of said account and the name of your channel
 3. Run ``index.exe``
 
 ### node.js
