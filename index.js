@@ -37,7 +37,7 @@ function onMessageHandler(target, context, msg, self) {
   if (commandName === "!np") {
     getCurrentMap()
       .then((data) => {
-        url = `https://osu.ppy.sh/beatmapsets/${data.menu.bm.set}#osu/${data.menu.bm.id}`;
+        url = `https://osu.ppy.sh/b/${data.menu.bm.id}`;
         length = new Date(data.menu.bm.time.full);
         length = `${length.getMinutes()}:${length.getSeconds()}`;
         beatmap = `${data.menu.bm.metadata.artist} - ${data.menu.bm.metadata.title} [${data.menu.bm.metadata.difficulty}]`;
